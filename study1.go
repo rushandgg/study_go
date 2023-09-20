@@ -1,6 +1,6 @@
 package main
 
 func main() {
-	println("first programing with go")
+	println("first programing with go!")
 
 }
