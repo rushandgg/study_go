@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
 
 	// 1st day : Install golang and Print
@@ -44,4 +48,37 @@ func main() {
 		orange        // 2
 	)
 	println(apple, grape, orange)
+
+	// 3rd day : Data Type
+
+	// bool
+	// string : 한번 생성되면 수정 불가능
+	// int, int8, int32, int64
+	// uint uint8, uint16, uint32, uint64, uintptr
+	// float32, float64, complex64, complex128
+	// byte : uint8과 동일, 바이트 코드에 사용
+	// rune : int32와 동일, 유니코드 코드포인트에 사용
+
+	// 문자열
+	// '' 은 Raw String Literal, 별도로 해석X, Raw String 그대로의 값을 갖음, \n 이 있을 경우 NewLine으로 해석X
+
+	rawLiteral := `야옹\n
+	야옹\n
+	야옹`
+
+	fmt.Println(rawLiteral)
+
+	fmt.Println()
+
+	interLiteral := "야옹\n야아아아아옹\n야옹"
+
+	fmt.Println(interLiteral)
+
+	// 데이터 타입 변환
+
+	var i2 int = 100
+	var u2 uint = uint(i2)
+	var f2 float32 = float32(i2)
+
+	println(f2, u2)
 }
