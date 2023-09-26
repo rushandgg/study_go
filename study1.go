@@ -81,4 +81,36 @@ func main() {
 	var f2 float32 = float32(i2)
 
 	println(f2, u2)
+
+	// 4th day : Operator
+
+	// 산술연산자
+	f3 := 1
+	g3 := 2
+	d3 := (f3 + g3) / 3
+	println(d3)
+
+	// 관계연산자
+	println(f3 == g3)
+	println(f3 != g3)
+	println(f3 >= g3)
+
+	// Bitwise 연산자
+	println((f3 & g3) << 5)
+
+	// 할당연산자
+	a = 100
+	println(a)
+	a *= 10
+	println(a)
+	a >>= 2
+	println(a)
+	a |= 1
+	println(a)
+
+	// 포인터연산자
+	var t int = 10
+	var p = &t // k의 주소를 할당
+	println(p)
+	println(*p) // p가 가리키는 주소에 있는 실제 내용을 출력
 }
