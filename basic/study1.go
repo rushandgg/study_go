@@ -113,4 +113,47 @@ func main() {
 	var p = &t // k의 주소를 할당
 	println(p)
 	println(*p) // p가 가리키는 주소에 있는 실제 내용을 출력
+
+	// 5th day : if statement
+
+	// if문 : 해당 조건이 맞으면 {} 안의 내용을 실행, {}의 시작을 if문과 같은 라인에 두어야 함, if문의 조건식은 반드시 Boolean 식으로 표현해야 함
+	if t == 1 {
+		println("야옹")
+	} else {
+		println("야옹2")
+	}
+
+	// swtich문
+
+	var name string
+	var category = 1
+
+	switch category {
+	case 1:
+		name = "고"
+	case 2:
+		name = "양"
+	case 3, 4:
+		name = "E"
+	default:
+		name = "Other"
+	}
+	println(name)
+
+	grade(77)
+}
+func grade(score int) {
+	switch {
+	case score >= 90:
+		println("A")
+	case score >= 80:
+		println("B")
+	case score >= 70:
+		println("C")
+	case score >= 60:
+		println("D")
+	default:
+		println("No Hope")
+
+	}
 }
