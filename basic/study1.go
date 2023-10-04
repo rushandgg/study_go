@@ -141,6 +141,28 @@ func main() {
 	println(name)
 
 	grade(77)
+
+	// 6th day : iteration
+
+	sum := 0
+	for i := 1; i <= 100; i++ {
+		sum += i
+	}
+	println(sum)
+
+	// for문 무한루프는 초기값; 조건식; 증감을 모두 생략하면 됨
+
+	// for range 문, 컬렉션으로 부터 위치인덱스와 값을 하나씩 가져옴
+	names := []string{"홍길동", "이순신", "강감찬"}
+	for index, name := range names {
+		println(index, name)
+	}
+
+	// break, continue, goto
+	// break : for, switch, select문에 사용 가능, 루프를 빠져나옴, 이중 for문의 경우 가장 안쪽 for문만 빠져나온다
+	// continue : for문에서만 사용 가능, for루프의 시작으로 감
+	// goto : 특정 label로 이동한다.
+
 }
 func grade(score int) {
 	switch {
